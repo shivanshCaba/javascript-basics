@@ -117,7 +117,7 @@ else{
         console.log("less than 14")
     }
     else{
-        console.log(" equal to 14")
+        console.log(" It is equal to 14 bro")
     }
 }
 
