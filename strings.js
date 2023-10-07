@@ -16,20 +16,25 @@ console.log(truth.substring(0,3))
 console.log(truth.substr(0,3))
 console.log(str + truth)
 console.log(str.concat( truth))
- let tr = "                  sndfsgjf,mns                 sfuiosn f                    "
- console.log(tr.trimEnd())
- console.log(tr.trimStart())
- console.log(tr.trim())
 
- let beechkaspaceremover = tr.trim().split(" ")
- let ans = "s"; //=> ans =  s+h -> shivan
- console.log(beechkaspaceremover)
- for(let i in beechkaspaceremover){
-    if(beechkaspaceremover[i]==' ' || beechkaspaceremover[i].trim()==' '){
 
-    }else{
-        ans = ans+beechkaspaceremover[i];
-    }
- }
+let tr = "                  sndfsgjf,mns                 sfuiosn f                    "
+// console.log(tr.trimEnd())
+// console.log(tr.trimStart())
+// console.log(tr.trim())
 
- console.log(ans)
+let beechkaspaceremover = tr.trim().split(" ");
+// beechkaspaceremover = beechkaspaceremover.split(" ");
+
+let ans = ""; //=> ans =  s+h -> shivan
+// console.log(beechkaspaceremover)
+
+for(let i in beechkaspaceremover){
+    if(beechkaspaceremover[i]==' '){
+
+}else{
+    ans = ans+beechkaspaceremover[i];
+}
+}
+
+// console.log(ans)
