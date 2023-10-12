@@ -17,9 +17,8 @@ let sum = 0;
 let mean = 0;
 for(let i=0;i<numbers.length;i++){
     sum = sum + numbers[i];
-    mean = sum/numbers.length ;
-
 }
+mean = sum/numbers.length ;
 console.log(mean);
 
 
@@ -48,22 +47,22 @@ let user_arr =[45, 67, 88, 0, 98,32,44]
 
 let arr = [4,5,6,7]
 
-for(let i in user_arr){
-    if(user_arr[i] == 0){
+// for(let i in user_arr){
+//     if(user_arr[i] == 0){
         
-    }else{
-        arr.push(user_arr[i]);
-    }
-}
-console.log(arr)
+//     }else{
+//         arr.push(user_arr[i]);
+//     }
+// }
+// console.log(arr)
 
-for(let i in user_arr){
-    if(user_arr[i] == 0){
-        continue
-    }
-    arr.push(user_arr[i]);
-}
-console.log(arr)
+// for(let i in user_arr){
+//     if(user_arr[i] == 0){
+//         continue;
+//     }
+//     arr.push(user_arr[i]);
+// }
+// console.log(arr)
 
 
 for(let i in user_arr){

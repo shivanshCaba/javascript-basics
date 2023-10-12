@@ -38,3 +38,22 @@ for(let i in beechkaspaceremover){
 }
 
 // console.log(ans)
+
+
+// special characters or template literals
+// let mam = "This is a \"string\" ";
+
+// template literal  
+// let template =  `asfjhuilsfjks
+//                 sfjsnfjsfsm;falsefs
+//                 smnfjklhnslkfn;asgsdf
+//                 asshosjhuijskfgk
+//                 sdflgk]getComputedStylegdjghnjk
+//                 gdkjbnsgjlkgndlkg`
+
+// console.log(template)
+let name = ["geetanajali", "mam", "diviniti", "shivansh", "sirrr"];
+
+for(let i in name){
+    console.log( `${name[i]} is absent today`);
+}
