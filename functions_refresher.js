@@ -54,7 +54,7 @@
 //     console.log("Bought clothes of rs", paisa)
 // }
 
-// goldDigger(1000);
+// photoDigger(1000);
 
 // function addition(a,b){
 //     console.log(a+b)
