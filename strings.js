@@ -48,7 +48,7 @@ for(let i in beechkaspaceremover){
 //                 sfjsnfjsfsm;falsefs
 //                 smnfjklhnslkfn;asgsdf
 //                 asshosjhuijskfgk
-//                 sdflgk]getComputedStylegdjghnjk
+//                 sdflgkgetComputedStylegdjghnjk
 //                 gdkjbnsgjlkgndlkg`
 
 // console.log(template)
