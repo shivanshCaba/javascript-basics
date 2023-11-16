@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <div id="div2">Lorem ipsum dolor sit amet.</div>
+    <div class="classOfDiv3">Lorem ipsum dolor sit amet.</div>
+    <div class="classOfDiv3">Lorem ipsum dolor sit amet.</div>
+    <div class="classOfDiv3">Lorem ipsum dolor sit amet.</div>
+    <div class="classOfDiv3">Lorem ipsum dolor sit amet.</div>
+    <div class="classOfDiv3">Lorem ipsum dolor sit amet.</div>
+    <div class="classOfDiv3">Lorem ipsum dolor sit amet.</div>
+
+
+
+    <script>
+        
+        let idElement = document.getElementById("div2")
+        console.log(idElement)
+        let classElement = document.getElementsByClassName("classOfDiv3") //-> returns an html collection -> similar to array but does not allows us to use array methods like split, push pop etc...
+        // console.log(classElement[0])
+        // console.log(classElement[1])
+        // console.log(classElement[2])
+        // console.log(classElement[3])
+        for(let i=0;i<classElement.length;i++){
+            console.log(classElement[i])
+        }
+        let tagElement = document.getElementsByTagName("div")
+        for(let i=0;i<tagElement.length;i++){
+            console.log(tagElement[i])
+        }
+    </script>
+</body>
+</html>
