@@ -15,10 +15,18 @@
     <div class="classOfDiv3">Lorem ipsum dolor sit amet.</div>
     <div class="classOfDiv3">Lorem ipsum dolor sit amet.</div>
 
+    <p >I am a happy p</p>
+    <p class="sadP">I am a sad p1</p>
+    <p class="sadP">I am a sad p2</p>
+    <p id="neutralP">
+        <b>FKldihsdgu tcvg</b>
+        I am a neutral p
+    </p>
+
+    <input type="text" value="Enter your first name">
 
 
-    <script>
-        
+    <script>  
         let idElement = document.getElementById("div2")
         console.log(idElement)
         let classElement = document.getElementsByClassName("classOfDiv3") //-> returns an html collection -> similar to array but does not allows us to use array methods like split, push pop etc...
@@ -33,6 +41,28 @@
         for(let i=0;i<tagElement.length;i++){
             console.log(tagElement[i])
         }
+
+        // Query Selector-> used to specify something
+        // let q = document.querySelector("p.sadP")
+        let q = document.querySelector("p#neutralP")
+        console.log(q)
+        let qAll = document.querySelectorAll("p.sadP");
+        console.log(qAll.length)
+        console.log(qAll[0])
+        console.log(qAll[1])
+
+        //HTMl - > innerHTML, innerText, value, attribute, body, forms
+        console.log(document.getElementById("neutralP").innerHTML)
+        console.log(document.getElementById("neutralP").innerText)
+        console.log(document.getElementsByClassName("sadP")[1].innerText)
+        console.log(document.getElementsByTagName("input")[0].value)
+        // attribute
+        console.log(document.getElementsByTagName("input")[0].type)
+        
+        // set
+        document.getElementById("neutralP").innerHTML = "<i>I am setting</i>"
+        document.getElementsByClassName("sadP")[1].innerText = "I am setting"
+        document.getElementsByTagName("input")[0].type = "number"
     </script>
 </body>
 </html>
