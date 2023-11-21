@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div 
+        id="event" 
+        onclick="addBorder()" 
+        onmouseover="changeColor()" 
+        onmouseleave="backToDefault(this)">   
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, earum.
+    </div> -->
+    <div 
+        id="event" 
+        onclick="toggleStyle(this)" 
+        >   
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, earum.
+    </div>
+
+    <input type="text" name="" id="" onchange="showText(this)">
+    <script>
+        // events
+        // onclick, onmouseover, onmouseenter, onmouseleave, onkeydown, onkeyup, onmousedown, onfocus, onblur
+
+        // function addBorder(){
+        //     document.getElementById("event").style.border = "2px solid red";
+        // }
+        // function changeColor(){
+        //     document.getElementById("event").style.backgroundColor = "yellow";
+        // }
+        // function backToDefault(divObj){
+        //     divObj.style.backgroundColor = "white"
+        // }
+
+        let color = false; // Flag variable 
+        function toggleStyle(div){
+            if(color == false){
+                div.style.backgroundColor = "yellow";
+                div.style.border = "2px solid red";
+                color = true;
+            }else{
+                div.style.backgroundColor = "white"
+                div.style.border = "none"
+                color = false;
+            }
+        }
+
+        function showText(input){
+            console.log(input.value);
+            let val = input.value;
+            val = val.toUpperCase();
+            input.value = val;
+        }
+
+    </script>
+</body>
+</html>

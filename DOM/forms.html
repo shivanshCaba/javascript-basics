@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+<form name="teraForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="first">
+  <input type="submit" value="Submit">
+</form>
+
+
+<script>
+    function validateForm() {
+      let x = document.forms["myForm"]["fname"].value;
+    //   if (x>="a" && x<="z" || x>="A" && x<="Z") {
+    //     alert("Name must be filled out");
+    //     return false;
+    //   }
+      if (isNaN(x) == true) {
+        alert("Name must be filled out");
+        return false;
+      }
+    //   WAP using onchange event to convert the string into camelCase()... 40rs 
+    //   WAP using koi bhi event to capitalize the string. Ex= we are awesome -> We Are Awesome... 20Rs. worth
+    }
+</script>
+</body>
+</html>
