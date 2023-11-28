@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="analog.css">
+    <!-- <script src="analog.js"></script> -->
+</head>
+
+<body>
+    <div id="clockContainer">
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+    </div>
+
+
+
+    <script>
+
+        
+        setInterval(timeUpdate, 1000)
+
+        function timeUpdate() {
+            let d = new Date();
+            let htime = d.getHours();
+            let mtime = d.getMinutes();
+            let stime = d.getSeconds();
+            let srotation = stime * 6;
+            let mrotation = mtime * 6;
+            let hrotation = htime * 30;
+            console.log(d)
+
+            hour.style.transform = `rotate(${hrotation}deg)`
+            minute.style.transform = `rotate(${mrotation}deg)`
+            second.style.transform = `rotate(${srotation}deg)`
+        }
+// Quiz app, calculator, spotify clone
+    </script>
+</body>
+
+</html>

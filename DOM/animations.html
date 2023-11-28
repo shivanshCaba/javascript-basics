@@ -1,0 +1,61 @@
+<!Doctype html>
+<html>
+<style>
+    #container {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: yellow;
+        margin: auto;
+    }
+
+    #animate {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background: red;
+    }
+</style>
+
+<body>
+
+
+    <h2>My First JavaScript Animation</h2>
+
+    <button onclick="moveBox()">Start Animation</button>
+    <div id="container">
+        <div id="animate"></div>
+    </div>
+
+
+    <script>
+
+        // setTimeout(work, 2000)
+        // let count = 0;
+        // let s2 = setInterval(function(){
+        //     document.write("I print every 2 seconds")
+        //     count ++;
+
+        //     if(count >=5){
+        //         clearInterval(s2)
+        //     }
+        // }, 2000)
+        function moveBox() {
+            let top = 0;
+            let left = 0;
+
+            let anime = setInterval(function () {
+                left++;
+                top++;
+                document.getElementById("animate").style.top = top + "px";
+                document.getElementById("animate").style.left = left + "px";
+                
+                if(top>=350){
+                    clearInterval(anime)
+                }
+            }, 10)
+        }
+    </script>
+</body>
+
+</html>

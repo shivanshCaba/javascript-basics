@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div id="div1" >sadgdfhdf</div>
+    <div id="div2" >sadgdfhdf</div>
+    <div id="div3" >sadgdfhdf</div>
+
+
+
+
+
+
+
+    <script>
+        let div1 = document.getElementById("div1");
+        div1.addEventListener("click", function(){
+            alert("Are u sure u want tp quit")
+            console.log("eventlistener running")
+        })
+        div2.addEventListener("mouseover", changeColor)
+        div2.addEventListener("mouseout", function(){ backToDefault(this) })
+        
+        function changeColor(){
+            document.getElementById("div2").style.backgroundColor = "yellow"
+        }
+
+        function backToDefault(div)
+        {
+            div.style.backgroundColor = "white"
+        }
+    </script>
+</body>
+</html>
